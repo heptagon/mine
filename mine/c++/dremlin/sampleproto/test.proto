@@ -1,0 +1,17 @@
+message Person {
+	required string name = 1;
+	required int32  id   = 2;
+	optional string email = 3;
+	repeated Phnum phnum        = 4;
+}
+
+message Phnum {
+	required string number = 1;
+	optional string type  = 2;
+}
+
+message Plist {
+	repeated Person person  = 1;
+}
+
+	
